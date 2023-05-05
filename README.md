@@ -58,3 +58,9 @@ https://www.colordic.org などから色を探せます。6桁なら色、8桁�
 .comment-box { color: #ffffff; }
 /* 文字色 ここまで */
 ```
+
+- コメント少なく表示
+
+```css
+.comment-box:nth-child(n + 3) { animation: 600ms fadeout 200ms forwards ease-out; }
+```
