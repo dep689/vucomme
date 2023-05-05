@@ -62,5 +62,7 @@ https://www.colordic.org などから色を探せます。6桁なら色、8桁�
 - コメント少なく表示
 
 ```css
+/* コメント少なく表示 ここから */
 .comment-box:nth-child(n + 3) { animation: 600ms fadeout 200ms forwards ease-out; }
+/* コメント少なく表示 ここまで */
 ```
