@@ -66,3 +66,37 @@ https://www.colordic.org などから色を探せます。6桁なら色、8桁�
 .comment-box:nth-child(n + 3) { animation: 600ms fadeout 200ms forwards ease-out; }
 /* コメント少なく表示 ここまで */
 ```
+
+## フォント変更（ムズカシイ）
+
+__Step 1.__ [Google Fonts](https://fonts.google.com/?subset=japanese&noto.script=Jpan) でフォントを探します。
+気に入ったフォントがあればクリックしてみる。
+
+__Step 2.__ Select ~~ というところがあるのでクリックしてみるとサイドバーが開きます。開かない場合は右上のボタンから開くことができます。
+
+![click](https://user-images.githubusercontent.com/117683899/236665548-076d85ce-eefa-47d9-a5b6-6c576f814dac.png)
+
+
+__Step 3.__  サイドバーから必要な情報をコピーします。
+
+![font_select](https://user-images.githubusercontent.com/117683899/236666553-04a2717d-f4c8-40be-81ab-36dc4a000f2a.png)
+
+__Step 4.__ コピーした情報をもとにカスタムCSSを設定します。
+
+__注意点__ `@import url(~~);` はカスタムCSSの __一番上に__ 設置します。
+
+カスタムCSSの例は下のようになります。
+
+```css
+/* フォントの読み込み ここから */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/* フォントの読み込み ここまで */
+
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+/* フォント設定 ここから */
+.comment-box { font-family: 'Hachi Maru Pop', cursive; }
+/* フォント設定 ここまで */
+```
+
+![font_css](https://user-images.githubusercontent.com/117683899/236667315-b102942a-af39-4751-afdf-b0458eab601e.png)
