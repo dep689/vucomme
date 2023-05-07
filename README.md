@@ -106,5 +106,8 @@ __注意点__ カスタムCSSの __一番上に__ 設置します。
 .comment-box { font-family: 'Hachi Maru Pop', cursive; }
 /* フォント設定 ここまで */
 ```
+
+次の２カ所を Step 3 でコピーした内容に書き換えてください。
+
 ![font_css](https://user-images.githubusercontent.com/117683899/236667828-62e63e00-ba6e-4e21-b0ca-b0f1a998fcc8.png)
 
