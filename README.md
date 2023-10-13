@@ -67,20 +67,35 @@ https://www.colordic.org などから色を探せます。6桁なら色、8桁�
 /* コメント少なく表示 ここまで */
 ```
 
-## フォント変更（ムズカシイ）
+## フォント変更（簡単編）
 
-__とりあえず使ってみる__
+手順
+1. @import なんちゃらと .comment-box なんちゃらの２行をコピー
+2. OBSのカスタムCSSの元からある body なんちゃらの __上に__ 貼り付け
 
-次の内容をカスタムCSSの __一番上に__ コピペしてみよう！
+お手本
+![image](https://github.com/dep689/vucomme/assets/117683899/87cfe905-2aaa-4a09-b85a-4231ce1207f6)
 
+
+- Hachi Maru Pop
 ```css
-/* フォント設定 ここから */
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 .comment-box { font-family: 'Hachi Maru Pop', cursive; }
-/* フォント設定 ここまで */
 ```
+![image](https://github.com/dep689/vucomme/assets/117683899/e6d52092-49c7-4ac7-b1a3-bc9e82b694ff)
 
-フォントが変わりましたか！？他のフォントを使うには次のようにします。
+
+- Yusei Magic
+```css
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+.comment-box { font-family: 'Yusei Magic', sans-serif; }
+```
+![image](https://github.com/dep689/vucomme/assets/117683899/c9b100e3-0ef9-47a6-975e-3cfd8ae8fb36)
+
+
+## フォント変更（ムズカシイ編）
+
+他のフォントを使うには次のようにします。
 
 __Step 1.__ [Google Fonts](https://fonts.google.com/?subset=japanese&noto.script=Jpan) でフォントを探します。
 気に入ったフォントがあればクリックしてみる。
